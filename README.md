@@ -6,6 +6,9 @@
 > University of Southampton  
 > Accepted at the **IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2027**
 
+> [!IMPORTANT]
+> **Release status:** This repository is currently undergoing final preparation for the official DiTGaze research-code release. The complete tested implementation, checkpoints and evaluation instructions will be added shortly. The current version should not yet be treated as the reproducibility release.
+
 DiTGaze is a calibration-efficient augmentation system for person-specific gaze estimation. It retains the explicit two-stream face/eye 3D Gaussian Splatting backbone introduced by [GazeGaussian](https://github.com/ucwxb/GazeGaussian), while replacing its convolutional rendering stage with a geometry-conditioned latent Diffusion Transformer (DiT). A learnable projection and frozen VAE connect rasterized Gaussian feature maps to latent tokens, while timestep and identity/expression conditioning are integrated through Adaptive Layer Normalization.
 
 DiTGaze additionally introduces:
